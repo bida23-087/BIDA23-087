@@ -43,13 +43,13 @@
             width: 90px;
             height: 110px;
             float:left;
-            padding:20px;
+            padding:10px;
            
               }
              nav {
             background-color:transparent;
             color: #fff;
-            text-align: right;
+            text-align: center;
             padding: 10px;
             text-transform:uppercase;
             font-weight:bold;
@@ -106,6 +106,39 @@
         h3{
             
         }
+        @media (max-width: 768px) {
+    .poster {
+        flex: 1 1 calc(50% - 20px); /* Set maximum width for posters (1/2 of the container width) */
+    }
+
+    nav {
+        text-align: center; /* Center align text on medium screens */
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .poster {
+        flex: 1 1 calc(100% - 20px); /* Set maximum width for posters (full width of the container) */
+    }
+
+    nav {
+        text-align: center; /* Center align text on small screens */
+        font-size: 24px; /* Adjust font size for better readability */
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
        
         </style>
 </head>
