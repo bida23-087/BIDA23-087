@@ -155,12 +155,32 @@
              text-transform:uppercase;
             font-weight:bold;
              }
-            
-            
-            
-
-       
-        </style>
+             .search-bar {
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .search-bar input[type="text"] {
+        padding: 10px;
+        width: 60%;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    
+    .search-bar button {
+        padding: 10px 20px;
+        background-color: #2D9BFC;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .search-bar button:hover {
+        background-color: #ADD8E6;
+    }
+ </style>
 </head>
 <body>
 
@@ -176,6 +196,10 @@
     <a href="Games.html">Games</a>
     <a href="Collections.html">Collections</a>
     <a href="Feedback.html">Feedback</a>
+    
+    <div class="search-bar">
+    <input type="text" placeholder="Search">
+    <button type="submit">Search</button>
 </nav>
 </header>
 
